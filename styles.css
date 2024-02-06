@@ -1,0 +1,253 @@
+body {
+  text-align: center;
+  font-size: 22px;
+}
+
+nav {
+  background: #fc4e03;
+  padding: 10px;
+}
+.navbar-brand {
+  font-family: 'Rye', cursive;
+}
+
+#about {
+  background: darkorange;
+}
+
+em {
+  color: #fc4e03;
+  font-size: xx-large;
+}
+
+h1,
+h2 {
+  color: red;
+}
+
+.text-white {
+  color: #ffffff;
+}
+.text-dark {
+  color: black;
+}
+
+#services {
+  background-color: #ffffff;
+}
+.card-shadow {
+  box-shadow: 5px 8px 20px #444;
+}
+
+.underline {
+  width: 150px;
+  border: 3px solid #fc4e03;
+  margin: auto;
+}
+section {
+  padding: 10px;
+}
+#work {
+  background-color: #444;
+}
+
+.contact {
+  background: linear-gradient(
+      105deg,
+      #151f20 0,
+      rgba(21, 31, 32, 0.95) 50%,
+      transparent 50%
+    ),
+    url('images/contact.jpg') no-repeat center center/cover;
+}
+.input {
+  background: 0 0;
+  border-color: transparent;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  transition: all 0.8s;
+}
+.input:focus {
+  background: 0 0;
+  border-color: transparent;
+  box-shadow: none;
+  color: #fff;
+  border-bottom: 2px solid #f5593d;
+}
+.submit-button {
+  background: #f5593d;
+  color: #eee;
+  transition: all 0.3s;
+}
+.submit-button:hover {
+  background: #f9973d;
+  transform: translateY(-3px);
+}
+.label {
+  color: #777;
+  display: block;
+  margin-top: -70px;
+  margin-left: 4px;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+.input:placeholder-shown + .label {
+  transform: translate(20px, 20px);
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width: 992px) {
+  .contact {
+    background: linear-gradient(#151f20, rgba(21, 31, 32, 0.95));
+  }
+  .contact-form {
+    width: 80%;
+    margin: auto;
+  }
+}
+footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 45px 0;
+}
+.social a:hover {
+  color: #f9973d;
+}
+.social a {
+  font-size: 32px;
+  margin: 0 10px;
+  color: #f5593d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+}
+
+.NMS-Bienvenida-Collage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.NMS-Bienvenida-Collage h2 {
+  color: #f5593d;
+}
+
+.NMS-Bienvenida-Collage a {
+  text-decoration: none;
+}
+
+.NMS-Bienvenida-Collage img {
+  height: auto;
+  max-width: 100%;
+}
+
+.NMS-Bienvenida-Collage .bloques {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.NMS-Bienvenida-Collage #bloque1:hover,
+.NMS-Bienvenida-Collage #bloque2:hover,
+.NMS-Bienvenida-Collage #bloque3:hover,
+.NMS-Bienvenida-Collage #bloque4:hover {
+  background: #f9973d;
+  transform: rotate(0deg);
+  z-index: 3;
+}
+
+.NMS-Bienvenida-Collage #bloque1 {
+  height: 400px;
+  margin-left: 40px;
+  transform: rotate(-5deg);
+  width: 300px;
+}
+
+.NMS-Bienvenida-Collage #bloque2 {
+  height: 450px;
+  margin-left: -80px;
+  transform: rotate(10deg);
+  width: 350px;
+  z-index: 2;
+}
+
+.NMS-Bienvenida-Collage #bloque3 {
+  height: 400px;
+  margin-left: -80px;
+  margin-right: 40px;
+  transform: rotate(-5deg);
+  width: 300px;
+}
+
+.NMS-Bienvenida-Collage #bloque4 {
+  height: 450px;
+  margin-top: -50px;
+  transform: rotate(-7deg);
+  width: 400px;
+}
+
+.NMS-Bienvenida-Collage #bloque1 p::before,
+.NMS-Bienvenida-Collage #bloque2 p::before,
+.NMS-Bienvenida-Collage #bloque3 p::before,
+.NMS-Bienvenida-Collage #bloque4 p::before {
+  background-color: #f5593d;
+  content: '';
+  display: block;
+  height: 6px;
+  margin-top: 35px;
+  order: 1;
+  -webkit-order: 1;
+}
+
+.NMS-Bienvenida-Collage #bloque1 p::after,
+.NMS-Bienvenida-Collage #bloque2 p::after,
+.NMS-Bienvenida-Collage #bloque3 p::after,
+.NMS-Bienvenida-Collage #bloque4 p::after {
+  background-color: #f5593d;
+  content: '';
+  display: block;
+  height: 6px;
+  margin-top: 18px;
+  order: 2;
+  -webkit-order: 2;
+  width: 80%;
+}
